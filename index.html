@@ -6162,7 +6162,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
     
     var CONTRACT_ADDRESS = "0x89687C915063D990d67483E188b19daAd90c9C68";
     var max_purchase = 10;
-    var mint_price = 0.05;
+    var mint_price = 0.04;
     var total_supply = 0;
     var max_supply = 6666;
     var chainid = "0x1"
@@ -6174,7 +6174,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
    
     //web3.eth.requestAccounts();
 
-    
+    /*
     function Beforesalestart() {
     var a = document.querySelector(".whuaddnumber").value;
     var b = document.querySelector(".whuaddnumber");
@@ -6183,7 +6183,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
     c.disabled = true;
     c.innerText = "Not Launched yet";
     }Beforesalestart();
-   
+   */
    
     async function checkChainId() {
 	 var el = document.querySelector(".whuconnectbtn")
@@ -6205,7 +6205,7 @@ unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+
      if (amount<1){
       amount=1;
      }
-     await contract.methods.mint(amount).send({from:coinbase,value:amount*50000000000000000});
+     await contract.methods.mint(amount).send({from:coinbase,value:amount*40000000000000000});
     }
 
     /*async function getmintedInfo() {
