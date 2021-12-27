@@ -1,0 +1,485 @@
+﻿/* ============================================================================================== 
+This copyright notice must be kept untouched in the stylesheet at all times.
+The original version of this stylesheet and the associated (x)html 
+is available at http://www.script-tutorials.com/bootstrap-one-page-template-with-parallax-effect/
+Copyright (c) Script Tutorials. All rights reserved.
+This stylesheet and the associated (x)html may be modified in any way to fit your requirements.
+================================================================================================= */
+
+/* general styles */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* padded section */
+.pad-section {
+  padding: 50px 0;
+}
+.pad-section img {
+  width: 100%;
+}
+
+/* vertical-centered text */
+.text-vcenter {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+.text-vcenter h1 {
+  font-size: 4.5em;
+  font-weight: 700;
+  margin: 0;
+  padding: 0;
+}
+
+/* additional sections */
+#home {
+  background: url(../images/banner_2.png) no-repeat center center fixed;
+  display: table;
+  height: 100%;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#mint {
+  background-image: url(https://static.parastorage.com/services/editor-elements/dist/media/ironpatern.6522082f.png);
+  background-color: #e33293a1;
+}
+.border-round {
+  border-radius: 50%;
+}
+#team {
+  background-image: url(https://static.parastorage.com/services/editor-elements/dist/media/ironpatern.6522082f.png);
+}
+#footer {
+  background-image: url(https://static.parastorage.com/services/editor-elements/dist/media/ironpatern.6522082f.png);
+  box-shadow: var(--shd, 0 0 5px rgba(0, 0, 0, 0.7));
+  padding: 20px 0;
+}
+#roadmap {
+  background-image: url(https://static.parastorage.com/services/editor-elements/dist/media/ironpatern.6522082f.png);
+  background-color: #222;
+}
+#team .glyphicon {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  font-size: 60px;
+  height: 140px;
+  line-height: 140px;
+  text-align: center;
+  vertical-align: middle;
+  width: 140px;
+}
+
+#about {
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.4) 0%,
+      rgba(255, 255, 255, 0.4) 98%
+    ),
+    url(../images/banner_1.png) no-repeat center center fixed;
+  display: table;
+  position: relative;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#about .panel {
+  opacity: 0.85;
+}
+
+#google_map {
+  height: 500px;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer .glyphicon {
+  color: #e33292;
+  font-size: 60px;
+}
+footer .glyphicon:hover {
+  color: #e33292;
+}
+.roadmap {
+  position: relative;
+  padding: 4px 0 0 0;
+  margin-top: 22px;
+  list-style: none;
+}
+
+.roadmap > li:nth-child(even) {
+  position: relative;
+  margin-bottom: 50px;
+  height: 180px;
+  right: -100px;
+}
+
+.roadmap > li:nth-child(odd) {
+  position: relative;
+  margin-bottom: 50px;
+  height: 180px;
+  left: -100px;
+}
+
+.roadmap > li:before,
+.roadmap > li:after {
+  content: " ";
+  display: table;
+}
+
+.roadmap > li:after {
+  clear: both;
+  min-height: 170px;
+}
+
+.roadmap > li .roadmap-panel {
+  position: relative;
+  float: left;
+  width: 41%;
+  padding: 0 20px 20px 30px;
+  text-align: right;
+}
+
+.roadmap > li .roadmap-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.roadmap > li .roadmap-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.roadmap > li .roadmap-image {
+  z-index: 100;
+  position: absolute;
+  left: 50%;
+  border: 7px solid #e33292;
+  border-radius: 100%;
+  background-color: #e33292;
+  box-shadow: 0 0 5px #e33292;
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+}
+
+.roadmap > li .roadmap-image h4 {
+  margin-top: 12px;
+  font-size: 10px;
+  line-height: 14px;
+}
+
+.roadmap > li.roadmap-inverted > .roadmap-panel {
+  float: right;
+  padding: 0 30px 20px 20px;
+  text-align: left;
+}
+
+.roadmap > li.roadmap-inverted > .roadmap-panel:before {
+  right: auto;
+  left: -15px;
+  border-right-width: 15px;
+  border-left-width: 0;
+}
+
+.roadmap > li.roadmap-inverted > .roadmap-panel:after {
+  right: auto;
+  left: -14px;
+  border-right-width: 14px;
+  border-left-width: 0;
+}
+
+.roadmap > li:last-child {
+  margin-bottom: 0;
+}
+
+.roadmap .roadmap-heading h4 {
+  margin-top: 22px;
+  font-family: "Comic Neue", cursive;
+  margin-bottom: 4px;
+  padding: 0;
+  color: #b3b3b3;
+  font-family: "Comic Neue", cursive;
+}
+
+.roadmap .roadmap-heading h4.subheading {
+  margin: 0;
+  padding: 0;
+  text-transform: none;
+  font-size: 28px;
+  color: #e33292;
+}
+
+.roadmap .roadmap-body > p,
+.roadmap .roadmap-body > ul {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-family: "Josefin Sans", sans-serif;
+}
+/*Style for even div.line*/
+.roadmap > li:nth-child(odd) .line:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 690px;
+  width: 4px;
+  height: 340px;
+  background-color: #e33292;
+  -ms-transform: rotate(-44deg); /* IE 9 */
+  -webkit-transform: rotate(-44deg); /* Safari */
+  transform: rotate(-44deg);
+  box-shadow: 0 0 5px #e33292;
+}
+/*Style for odd div.line*/
+.roadmap > li:nth-child(even) .line:before {
+  content: "";
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  left: 450px;
+  width: 4px;
+  height: 340px;
+  background-color: #e33292;
+  -ms-transform: rotate(44deg); /* IE 9 */
+  -webkit-transform: rotate(44deg); /* Safari */
+  transform: rotate(44deg);
+  box-shadow: 0 0 5px #e33292;
+}
+/* Medium Devices, .visible-md-* */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .roadmap > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .roadmap > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .roadmap > li:nth-child(even) .roadmap-image {
+    left: 0;
+    margin-left: 0px;
+  }
+  .roadmap > li:nth-child(odd) .roadmap-image {
+    left: 690px;
+    margin-left: 0px;
+  }
+  .roadmap > li:nth-child(even) .roadmap-panel {
+    width: 76%;
+    padding: 0 0 20px 0px;
+    text-align: left;
+  }
+  .roadmap > li:nth-child(odd) .roadmap-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: right;
+  }
+  .roadmap > li .line {
+    display: none;
+  }
+}
+/* Small Devices, Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  .roadmap > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .roadmap > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .roadmap > li:nth-child(even) .roadmap-image {
+    left: 0;
+    margin-left: 0px;
+  }
+  .roadmap > li:nth-child(odd) .roadmap-image {
+    left: 520px;
+    margin-left: 0px;
+  }
+  .roadmap > li:nth-child(even) .roadmap-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: left;
+  }
+  .roadmap > li:nth-child(odd) .roadmap-panel {
+    width: 70%;
+    padding: 0 0 20px 0px;
+    text-align: right;
+  }
+  .roadmap > li .line {
+    display: none;
+  }
+}
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 767px) {
+  .roadmap > li:nth-child(even) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    right: 0px;
+  }
+  .roadmap > li:nth-child(odd) {
+    margin-bottom: 0px;
+    min-height: 0px;
+    left: 0px;
+  }
+  .roadmap > li .roadmap-image {
+    position: static;
+    width: 150px;
+    height: 150px;
+    margin-bottom: 0px;
+  }
+  .roadmap > li:nth-child(even) .roadmap-image {
+    left: 0;
+    margin-left: 0;
+  }
+  .roadmap > li:nth-child(odd) .roadmap-image {
+    float: right;
+    left: 0px;
+    margin-left: 0;
+  }
+  .roadmap > li:nth-child(even) .roadmap-panel {
+    width: 100%;
+    padding: 0 0 20px 14px;
+  }
+  .roadmap > li:nth-child(odd) .roadmap-panel {
+    width: 100%;
+    padding: 0 14px 20px 0px;
+  }
+  .roadmap > li .line {
+    display: none;
+  }
+  .social-icons {
+    display: none;
+  }
+  .roadmap > li:nth-child(even) {
+    height: unset;
+  }
+
+  .roadmap > li:nth-child(odd) {
+    height: unset;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-fixed-top,
+  .navbar-fixed-bottom {
+    padding: 0px 10%;
+  }
+  .container-fluid {
+    align-items: center;
+    align-self: center;
+    display: flex;
+  }
+  .navbar-default {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.navbar-default {
+  background-image: url(https://static.parastorage.com/services/editor-elements/dist/media/ironpatern.6522082f.png);
+  box-shadow: var(--shd, 0 0 5px rgba(0, 0, 0, 0.7));
+}
+.navbar-toggle {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+.social-icons {
+  color: #313437;
+  /*background-color: #fff;*/
+  text-align: center;
+  margin-left: auto !important;
+}
+.social-icons a {
+  margin: 0 10px;
+}
+.social-icons i {
+  font-size: 32px;
+  display: inline-block;
+  color: #757980;
+  margin: 0 10px;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #c8ced7;
+  text-align: center;
+  border-radius: 50%;
+  line-height: 60px;
+}
+.navbar-default .navbar-nav > li > a {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 24px;
+}
+.navbar-default .navbar-nav > li > a:hover {
+  color: #e33292;
+}
+.nav > li > a {
+  padding: 10px 32px;
+}
+#mint h2 {
+  font-family: "Comic Neue", cursive;
+  font-size: 32px;
+  font-weight: 700;
+}
+#roadmap .title {
+  color: #ffffff;
+}
+.title {
+  font-family: "Comic Neue", cursive;
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 32px;
+}
+#team h4 {
+  font-family: "Comic Neue", cursive;
+}
+.panel-title > a {
+  width: 100%;
+  display: block;
+  font-family: "Comic Neue", cursive;
+  font-size: 24px;
+}
+.panel-title > a:hover {
+  text-decoration: none;
+}
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px;
+  background-image: url(https://static.parastorage.com/services/editor-elements/dist/media/ironpatern.6522082f.png);
+}
+h4,
+.h4 {
+  font-size: 22px;
+}
+#footer h3 {
+  font-family: "Josefin Sans", sans-serif;
+}
+a:focus {
+  outline: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+#root > div {
+  background-color: transparent !important;
+  min-height: unset !important;
+}
+#mint col-md-6:nth-child(2) {
+  padding: 32px 0;
+}

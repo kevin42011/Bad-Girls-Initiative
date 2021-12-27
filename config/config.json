@@ -1,0 +1,18 @@
+{
+  "CONTRACT_ADDRESS": "0x89687C915063D990d67483E188b19daAd90c9C68",
+  "SCAN_LINK": "https://etherscan.io/token/0x89687C915063D990d67483E188b19daAd90c9C68",
+  "NETWORK": {
+    "NAME": "Ethereum",
+    "SYMBOL": "ETH",
+    "ID": 1
+  },
+  "NFT_NAME": "Bad_Girls_Initiative",
+  "SYMBOL": "BGI",
+  "MAX_SUPPLY": 6666,
+  "WEI_COST": 40000000000000000,
+  "DISPLAY_COST": 0.04,
+  "GAS_LIMIT": 160000,
+  "MARKETPLACE": "Opeansea",
+  "MARKETPLACE_LINK": "https://opensea.io/collection/bad-girls-initiative",
+  "SHOW_BACKGROUND": true
+}
